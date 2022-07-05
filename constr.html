@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Meygo project</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="refact.css">
+    <link rel="icon" href="logoIcon/eyeMono.png" type="image/png">
+</head>
+
+<body>
+    <header class="nav_header">
+		<div class="logotype">
+            <a href="index.html"><img src="logoIcon/meygocl.png" alt="lotupe" class="header_logo_img"></a>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <a href="constr.html"><li>Конструктор</li></a>
+                <a href="articles.html"><li>Внешние материалы</li></a>
+            </ul>
+        </nav>
+	</header>
+	
+	<main class="constr_container">
+        <div class="result">
+            <p id="result_field" title="Кликните, чтобы скопировать">Здесь будет ваш запрос</p>
+        </div>
+
+        <div class="carousel">
+            <div class="mobile_path">
+                <div class="left_constr_button">
+                    <button id="button_left">&lt;</button>
+                </div>
+                <div class="constr_param">
+                    <div id="carousel_move">
+                        <div>
+                            <p>Сборка основы запроса</p>
+                            <p>
+                                Введите основу запроса: регистр шрифта и 
+                                знаки пунктуации не важны. Для поиска точных совпадений используйте
+                                кавычки, для замены слова или фразы используйте "*", для поиска по хештегу "#".
+                            </p>
+                            <div class="input_box">
+                                <input type="text" class="long_input" id="input_query"></input>
+                                <button id="button_in_1">применить</button>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Настройка типа данных</p>
+                            <p>
+                                Укажите тип файлов, которые будут в результатах выдачи. Если
+                                тип данных не будет указан, будут искаться страницы по умолчанию.
+                                В выдаче документы разных типов будут перемешаны.
+                            </p>
+                            <div class="input_box">
+                                <button id="button_in_2">PDF</button>
+                                <button id="button_in_3">Текстовые файлы</button>
+                                <button id="button_in_4">Презентации</button>
+                                <button id="button_in_5">Таблицы</button>
+                                <button id="button_in_6">Latex</button>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Исключения</p>
+                            <p>
+                                Исключения указываеются следующим образом: " -исключение1 -(исключение 2)".
+                                Если в результах поиска будут встречены исключенные слова, они не отобразятся
+                                на странице выдачи. Можно указать несколько исключений.
+                            </p>
+                            <div class="input_box">
+                                <input type="text" class="long_input" id="thow_query"></input>
+                                <button id="button_in_7">применить</button>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Поиск на конкретном сайте</p>
+                            <p>
+                                Для поиска на конкретном сайте нужно указать его адрес. Адрес указывается 
+                                следующим образом: "htmlbook.ru". По умолчанию поиск осуществляется по всем
+                                сайтам. Указать можно только один адрес.
+                            </p>
+                            <div class="input_box">
+                                <input type="text"  class="long_input" id="site_query"></input>
+                                <button id="button_in_8">применить</button>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Настройка даты</p>
+                            <p>
+                                Для уточнения результатов поиска можно указать дату. Можно указать как интервал
+                                из двух чисел, так и одно число. Формат: от 2010 до 2022. И в левом, и в правом
+                                поле может быть только одно число. 
+                            </p>
+                            <div class="input_box">
+                                <input type="min" id="after_query"></input>
+                                <input type="max" id="before_query"></input>
+                                <button id="button_in_9">применить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right_constr_button">
+                    <button id="button_right">&gt;</button>
+                </div>
+            </div>
+
+            <div class="radius50">
+                <button id="button0"> </button>
+                <button id="button1"> </button>
+                <button id="button2"> </button>
+                <button id="button3"> </button>
+                <button id="button4"> </button>
+            </div>
+        </div>
+	</main>
+
+    
+	
+	<footer>
+        <div class="left_layer">
+            <a href="index.html"><img src="logoIcon/meygo.png" alt="lotupe"></a>
+        </div>
+        <div class="right_layer">      
+            <p>MEYGO - некоммерческий проект по повышению информационной грамотности</p>
+            <p>Работа выполнена в рамках лентней учебной практики 2022</p>
+            <p>Контакты: delovoykrokodil@mail.ru</p>
+        </div>
+    </footer>
+    <script defer src="carousel.js"></script>
+    <script defer src="constLogic.js"></script>
+</body>
+</html>

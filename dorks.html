@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Meygo project</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="refact.css">
+    <link rel="icon" href="logoIcon/eyeMono.png" type="image/png">
+</head>
+
+<body>
+    <header class="nav_header">
+		<div class="logotype">
+            <a href="index.html"><img src="logoIcon/meygocl.png" alt="lotupe" class="header_logo_img"></a>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <a href="constr.html"><li>Конструктор</li></a>
+                <a href="articles.html"><li>Внешние материалы</li></a>
+            </ul>
+        </nav>
+	</header>
+	
+	<main class="articles_consider">
+        <div class="article_header2">
+            <h1>Поисковые операторы</h1>
+            <div class="meta">
+                <p>Время чтения: 5 минут</p>
+                <p>Ссылки: 0</p>
+                <p>Дата: 04.07.2022</p>
+            </div>
+        </div>
+        <article>
+            <h2>Наиболее важные поисковые операторы Google</h2>
+            <p>
+                Поисковые операторы позволяют использовать поисковую систему по-максимуму.
+                Ниже перечислены наиболее полезные операторы, используемые в поисковой ситсеме
+                Google. К каждому оператору есть описание и пример применения.
+            </p>
+            <div class="operators_block">
+                <h2 class="operator_name">" "</h2>
+                <div class="operator_sescription">
+                    <p>
+                        Принудительный поиск точного совпадения. 
+                        Используйте его для уточнения неоднозначных результатов поиска или 
+                        исключения синонимов при поиске отдельных слов.
+                    </p>
+                </div>
+                <div class="operator_examples">
+                    <p>
+                        “steve jobs”
+                    </p>
+                </div>
+            </div>
+            
+            <div class="operators_block">
+                <h2 class="operator_name">OR (|)</h2>
+                <div class="operator_sescription">
+                    <p>
+                        Поиск по X или Y. Вернёт результаты, связанные с X или Y, 
+                        или и то, и другое. Вместо него можно использовать оператор (|).
+                    </p>
+                </div>
+                <div class="operator_examples">
+                    <p>
+                        jobs OR gates / jobs | gates
+                    </p>
+                </div>
+            </div>
+            
+            <div class="operators_block">
+                <h2 class="operator_name">AND</h2>
+                <div class="operator_sescription">
+                    <p>
+                        Поиск по X и Y. Вернёт только результаты, связанные как с X, так и с Y. 
+                        Примечание: в реальности не имеет значения для обычного поиска, 
+                        потому что Google по умолчанию вставляет AND. Но очень полезен 
+                        в сочетании с другими операторами.
+                    </p>
+                </div>
+                <div class="operator_examples">
+                    <p>
+                        jobs AND gates
+                    </p>
+                </div>
+            </div>
+            
+            <div class="operators_block">
+                <h2 class="operator_name">-</h2>
+                <div class="operator_sescription">
+                    <p>
+                        Исключение термина или фразы. 
+                        В нашем примере все страницы будут упоминать Джобса, 
+                        но не с Apple (компанией).
+                    </p>
+                </div>
+                <div class="operator_examples">
+                    <p>
+                        jobs -apple
+                    </p>
+                </div>
+            </div>
+            
+            <div class="operators_block">
+                <h2 class="operator_name">*</h2>
+                <div class="operator_sescription">
+                    <p>
+                        Действует как подстановочный знак для произвольного слова или фразы.
+                    </p>
+                </div>
+                <div class="operator_examples">
+                    <p>
+                        steve * apple
+                    </p>
+                </div>
+            </div>
+            
+            <div class="operators_block">
+                <h2 class="operator_name">( )</h2>
+                <div class="operator_sescription">
+                    <p>
+                        Группировка нескольких терминов или операторов, чтобы контролировать выдачу.
+                    </p>
+                </div>
+                <div class="operator_examples">
+                    <p>
+                         (ipad OR iphone) apple
+                    </p>
+                </div>
+            </div>
+            
+            <div class="operators_block">
+                <h2 class="operator_name">$</h2>
+                <div class="operator_sescription">
+                    <p>
+                        Поиск цен. Также работает для евро (€), но не для британского фунта (£).
+                    </p>
+                </div>
+                <div class="operator_examples">
+                    <p>
+                         ipad $329
+                    </p>
+                </div>
+            </div>
+            
+            <div class="operators_block">
+                <h2 class="operator_name">define:</h2>
+                <div class="operator_sescription">
+                    <p>
+                        По сути, это встроенный в Google словарь. Показывает значение слова.
+                    </p>
+                </div>
+                <div class="operator_examples">
+                    <p>
+                         define:entrepreneur
+                    </p>
+                </div>
+            </div>
+            
+            <div class="operators_block">
+                <h2 class="operator_name">cache:</h2>
+                <div class="operator_sescription">
+                    <p>
+                        Возвращает последнюю кэшированную версию веб-страницы (при условии, что страница проиндексирована, конечно).
+                    </p>
+                </div>
+                <div class="operator_examples">
+                    <p>
+                        cache:apple.com
+                    </p>
+                </div>
+            </div>
+            
+            <div class="operators_block">
+                <h2 class="operator_name">filetype:</h2>
+                <div class="operator_sescription">
+                    <p>
+                        Ограничивает результаты файлами определённого формата, например, 
+                        pdf, docx, txt, ppt и т. д. Примечание: аналогично оператору “ext:”.
+                    </p>
+                </div>
+                <div class="operator_examples">
+                    <p>
+                        apple filetype:pdf / apple ext:pdf
+                    </p>
+                </div>
+            </div>
+            
+            <div class="operators_block">
+                <h2 class="operator_name">site:</h2>
+                <div class="operator_sescription">
+                    <p>
+                        Результаты для определённого домена.
+                </div>
+                <div class="operator_examples">
+                    <p>
+                        site:apple.com
+                    </p>
+                </div>
+            </div>
+            
+            <div class="operators_block">
+                <h2 class="operator_name">related:</h2>
+                <div class="operator_sescription">
+                    <p>
+                        Поиск сайтов, связанных с данным доменом.
+                    </p>
+                </div>
+                <div class="operator_examples">
+                    <p>
+                        related:apple.com
+                    </p>
+                </div>
+            </div>
+            
+            <div class="operators_block">
+                <h2 class="operator_name">intitle:</h2>
+                <div class="operator_sescription">
+                    <p>
+                        Найти страницы с определённым словом (или словами) в заголовке страницы. 
+                        В нашем примере возвратятся все результаты со словом [apple] в теге title.
+                    </p>
+                </div>
+                <div class="operator_examples">
+                    <p>
+                        intitle:apple
+                    </p>
+                </div>
+            </div>
+            
+            <div class="operators_block">
+                <h2 class="operator_name">allintitle:</h2>
+                <div class="operator_sescription">
+                    <p>
+                        Аналогично “intitle", но будут возвращает результаты, 
+                        содержащие все указанные слова в теге title.
+                    </p>
+                </div>
+                <div class="operator_examples">
+                    <p>
+                        allintitle:apple iphone
+                    </p>
+                </div>
+            </div>
+            
+            <div class="operators_block">
+                <h2 class="operator_name">inurl:</h2>
+                <div class="operator_sescription">
+                    <p>
+                        Найти страницы с определённым словом (или словами) в URL. 
+                        В этом примере будут возвращены все результаты, содержащие слово [apple] в URL.
+                    </p>
+                </div>
+                <div class="operator_examples">
+                    <p>
+                        inurl:apple
+                    </p>
+                </div>
+            </div>
+            
+            <div class="operators_block">
+                <h2 class="operator_name">allinurl:</h2>
+                <div class="operator_sescription">
+                    <p>
+                        Аналогично “inurl", но возвращает результаты со всеми указанными словами в URL.
+                    </p>
+                </div>
+                <div class="operator_examples">
+                    <p>
+                        allinurl:apple iphone
+                    </p>
+                </div>
+            </div>
+            
+            <div class="operators_block">
+                <h2 class="operator_name">inurl:</h2>
+                <div class="operator_sescription">
+                    <p>
+                        Найти страницы с определённым словом (или словами) в URL. 
+                        В этом примере будут возвращены все результаты, содержащие слово [apple] в URL.
+                    </p>
+                </div>
+                <div class="operator_examples">
+                    <p>
+                        inurl:apple
+                    </p>
+                </div>
+            </div>
+            
+            <div class="operators_block">
+                <h2 class="operator_name">allinurl:</h2>
+                <div class="operator_sescription">
+                    <p>
+                        Аналогично “inurl", но возвращает результаты со всеми указанными словами в URL.
+                    </p>
+                </div>
+                <div class="operator_examples">
+                    <p>
+                        allinurl:apple iphone
+                    </p>
+                </div>
+            </div>
+            
+            <div class="operators_block">
+                <h2 class="operator_name">intext:</h2>
+                <div class="operator_sescription">
+                    <p>
+                        Найти страницы, содержащие определённое слово (или слова) где-то в содержании. 
+                        В примере будут возвращены все результаты, содержащие слово [apple] на странице.
+                    </p>
+                </div>
+                <div class="operator_examples">
+                    <p>
+                        intext:apple
+                    </p>
+                </div>
+            </div>
+            
+            <div class="operators_block">
+                <h2 class="operator_name">allintext:</h2>
+                <div class="operator_sescription">
+                    <p>
+                        Аналогично “intext", но возвращает результаты со всеми указанными словами на странице.
+                    </p>
+                </div>
+                <div class="operator_examples">
+                    <p>
+                        allintext:apple iphone
+                    </p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+        </article>
+	</main>
+
+    
+	
+	<footer>
+        <div class="left_layer">
+            <a href="index.html"><img src="logoIcon/meygo.png" alt="lotupe"></a>
+        </div>
+        <div class="right_layer">      
+            <p>MEYGO - некоммерческий проект по повышению информационной грамотности</p>
+            <p>Работа выполнена в рамках лентней учебной практики 2022</p>
+            <p>Контакты: delovoykrokodil@mail.ru</p>
+        </div>
+    </footer>
+</body>
+</html>
+
