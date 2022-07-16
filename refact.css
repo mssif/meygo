@@ -65,7 +65,6 @@
     --h-big-size: 48px;
 
     --text-block-width: 500px;
-    --text-block-width-big: 750px;
 }
 
 body {
@@ -76,14 +75,16 @@ body {
 
 .nav_header {
     color: var(--color-main-text);
-	display: flex;
 	height: var(--header-height);
+    display: flex;
+    justify-content: flex-start;
 	background-color: var(--color-header);
     border-bottom: 1px solid var(--color-text-menu);
 }
 
 .logotype {
     padding-left: var(--padding);
+    width: 175px;
 }
 
 .header_logo_img {
@@ -238,11 +239,7 @@ a:hover .sputnic {
     margin-left: var(--small-padding);
 }
 
-.section_4_left_block {
-    width: 790px;
-}
-
-.section_6_left_block {
+.section_4_left_block, .section_6_left_block {
     width: 790px;
 }
 
@@ -572,7 +569,7 @@ footer {
     display: block;
 }
 
-.input_box input:active, .input_box input:focus {
+.input_box input:active, .input_box input:focus, button {
     outline: 0;
 }
 
@@ -973,6 +970,7 @@ article h2 {
 
     .first_sections_left_block {  
         width: 500px;
+        padding: 0px
     }
 
     .section_2, .section_4, .section_6 {
@@ -988,6 +986,7 @@ article h2 {
 
     .container_ftwo {
         flex-direction: column;
+        width: 100%;
     }
 
     .tall_container {
@@ -1035,6 +1034,10 @@ article h2 {
 @media (max-width: 520px) { 
     footer {
         flex-direction: column;
+    }
+
+    .logotype {
+        width: 30px;
     }
 
     .left_layer {
@@ -1234,6 +1237,24 @@ article h2 {
     .radius50 {
         height: 16px;
     }
+
+    .first_sections {
+        height: auto;
+    }
 }
+
+@media (max-height: 570px) { 
+    #overflow_delete {
+        display: none;
+    }
+    .radius50 {
+        height: 16px;
+    }
+
+    .first_sections {
+        height: auto;
+    }
+}
+
 
 /*---------------------------------------------------------------------------------------------*/
