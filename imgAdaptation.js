@@ -32,7 +32,7 @@ function waitForDOM() {
         поэтому все размеры вычисляются для Tahoma, а не для Roboto. Эти два шрифта
         имеют разные размеры, поэтому могут возникать проблемы с отображением.
         (Tahoma идет сразу за Roboto в стилях, поэтому пока Roboto на загрузился, 
-        используется Tahoma)
+        используется Tahoma) 
     */
     if (window.innerWidth < 1080) {
         changeImage = document.getElementById('firstImage');
@@ -41,7 +41,7 @@ function waitForDOM() {
         changeImage.style.display = 'none';
         changeImage = document.getElementById('thirdImage');
         changeImage.style.display = 'none';
-    } else if (document.fonts.check("16px Roboto") == true) {
+    } else if (document.fonts.check("16px Roboto") == true && document.fonts.check("16px Noto Serif") == true) {
         repaintImage();
     } else {
         setTimeout(waitForDOM, 50); // Попробовать снова через 50 миллисекунд
